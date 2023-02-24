@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-es">
+<head >
+    <title>Mi primera actividad</title>
+    <meta charset='utf-8'>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 300px;" >
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mujer maravilla</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Superman</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Flash</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Total: 200</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- ul es lista no ordenada -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- ul es lista no ordenada -->
+    <ol>
+        <li value="50" >Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+        <br>
+        <button type="button" >Botón</button>
+        <button type="reset" >Borrar</button>
+        <button type="submit" >Enviar</button>
+    </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>lo que sea</h6>
+    <p>este es mi parrafo</p>
+    <p>este es mi segundo parrafo</p>
+    <hr>
+    <h2>esta es otra etiqueta dos</h2>
+    <p>
+        Este texto es <span style="color:blue">mucho mas</span> texto <br>
+        la etiqueta span!
+    </p>
+    <!-- Este es mi comentario y no debe aparecer en el explorador -->
+    <a target="_blank" href="https://www.facebook.com/profile.php?id=100076537770058">Ir a facebook</a>
+    <img src="img/HAni1.png" width="200" height="200" alt="imagen">
+
+</body>
+</html>

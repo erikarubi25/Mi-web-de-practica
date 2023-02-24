@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-es">
+<head>
+    <title>Mi web de practica</title>
+    <!-- Dentro del head enlazar archivos css
+    enlazar archivos js
+    anadir fuentes externas
+    metadatos (keywords, descriptions, robots, author, owner) -->
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="sintaxis.css">
+    <script src="modernizr-custom.js"></script>
+</head>
+<body>
+    <header>
+        <!-- suele incluir:
+        logotipo de la página
+        nombre -> h1
+        nav
+        banner
+        solo habrá una etiqueta de este tipo-->
+        <h1 id="titulo">HANICRAFTS</h1>
+        <!-- h1 título principal
+             h2 título secundario
+             h3, h4, h5 secundarios se irán haciendo mas pequeñas las letras según el valor de la frase para la busqueda del navegador-->
+        <h2>Manualidades</h2>
+        <nav>
+            <!-- nav Menu de navegacion -->
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a target="_blank" href="index.html">Otra pestana</a>
+                    <!-- el atributo target nos abre el link en una pestana nueva -->
+                </li>
+                <li>
+                    <a target="_blank" href="#ejemplo">Parte especifica de la pagina</a>
+                    <!-- con el signo de # y el nombre que dimos en <section id="ejemplo"> nos redirige dentro de la misma pagina especificamente -->
+                </li>
+                <li>
+                    <a target="_blank" href="../intro_html/index.html">Pagina interna</a>
+                    <!-- para buscar dentro del equipo  -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <span>Frase lineal</span>
+            <!-- <span> para resaltar un texto con ayuda de css a diferencia
+        de <p> que solo es el texto de un parrafo-->
+        <p id="azul">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. <span>Frase lineal</span> It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing
+        software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <p>TEXTO SIN CLASE Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. <strong>Frase lineal</strong> It has survived not only five centuries, but also the leap into electronic
+        typesetting, remaining essentially unchanged.
+        <br>
+        <!-- Es menos comun en la actualidad para poner espacio mas grande pero se puede usar con otros elementos de css preferible no usarlas-->
+        It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing <em>Frase lineal</em>
+        software like Aldus PageMaker including versions of Lorem Ipsum.
+    <!-- <strong> resalta en negrita ayuda a dar fuerza al buscador es para destacar el texto
+        para google tiene mas sentido es frase que el resto el estilo negrita q tiene por defecto se puede eliminar con css
+        <em> es cursiva pero igual se puede modificar con css funciona como la strong de peso semantico pero no con tanta fuerza -->
+        </p>
+        <p>TEXTO Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. <strong>Frase lineal</strong> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        <br>
+        </p>
+        <p class="prueba">Texto con clase Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Frase lineal It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        <p class="prueba grande">Texto con clase Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Frase lineal It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        <p class="prueba">Texto con clase Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Frase lineal It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        <p class="prueba grande">Texto con clase Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Frase lineal It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        <p class="em">PARRAFO EM 1/div Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+        <p class="ex">PARRAFO EX Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+        <p class="px">PARRAFO PX Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+        <p class="in">Pulgadas</p>
+        <p class="cm">Centimetros</p>
+        <p class="mm">Milimetros</p>
+        <p class="pt">Puntos</p>
+        <p class="pc">Picas</p>
+    <div>
+        <!-- div divide diferentes areas, que tengan diferente sentido semantico, division interna dentro de una etiqueta como section, aside etc,todos los elementos que son bloques deben ir dentro de un div -->
+        <p>Hola bienvenido a mi pagina de prueba</p>
+        <p class="rem"> REM HEREDADO Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+        <p>EJEMPL REM HEREDADO Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+        <p>TEXTO 2/div Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+    </div>
+    <div style="width: 100px; height: 100px; background: rgb(115, 168, 115); border: 1px solid black; margin: 20px;">
+        Un ejemplo de estilo dentro del html
+    </div>
+    <div class="ejemplo caja">
+        <p class="ecaja">Este es un ejemplo de modelo de caja</p>
+        <a href="a">haz clic aqui</a>
+
+
+    </div>
+
+
+    <div class="fija"></div>
+    <div class="porcentual"></div>
+
+    <div class="hsl_transparencia"></div>
+    <div class="rgb_transparencia"></div>
+
+    <div class="reservadas"></div>
+    <div class="luzRGB"></div>
+    <div class="hex"></div>
+    <div class="porcentualcolor"></div>
+    <div class="hsl"></div>
+
+    <section>
+        <h2 title="subtitulo otro main">Una manualidad</h2>
+        <article class="post" >
+            <h3>Una manualidad2</h3>
+            <p>Este es una pagina de manualidades</p>
+            <img src="img/HAni1.png" width="200" alt="hani">
+            <!-- src = source = origen de un elemento / cadena q representa una URL q senala un archivo de video-->
+            <!-- height y width estan en html y se pueden usar pero actualmente se deben de hacer con css para buena practica -->
+            <p>Aprendiendo y o recordando HTML</p>
+        </article>
+        <article class="post">
+            <h2 title="subtitulo">Wonder Woman</h2>
+            <p>La mujer maravilla</p>
+            <figure>
+                <img src="img/sw.jpg" width="200" alt="super maravilla">
+                <!-- alt = descripcion de la imagen,
+                    ayuda a entender al buscador que contenido multimedia contiene la pagina
+                todas las imagenes deben de tener esta propiedad para q se entienda de q trata el contenido q se anade -->
+                <figcaption>La mujer maravilla o wonder woman</figcaption>
+                <!-- figcaption= texto que acompana a la imagen no es precisamente la descripcion -->
+            </figure>
+            <p>Una de la mujer maravilla</p>
+        </article>
+        <article class="post">
+            <!-- article = es de solo un contenido son post = publicaciones de un unico elemento una parte de la pagina ejemplo articulo como de mercado libre q te lleva a toda la informacion del mismo, pueden haber varias etiquetas article-->
+            <h2>Car</h2>
+            <p>Un carrito para un chico</p>
+            <img src="img/car.jpg" width="200" alt="carro">
+            <p>Super carrito</p>
+            <audio src="audio.mp3" type="audio/mp3" controls="controls" ></audio>
+            <!-- audio= se debe coocar el type para marcar q tipo de audio debe de ser, y controls Atributo booleano q active un conjunto de controles de reproduccion integrados como reproducir, pausa, ajustar volumen, etc-->
+            <br>
+            <video src="video.mp4" width="200" type=" video/mp4" controls="controls"></video>
+            <!-- la etiqueta video depende del navegador pueden no reproducirse de la misma manera o no verse pero se recomienda con el codigo (iframe )de youtube como en el ejemplo siguiente-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+
+
+    </section>
+
+    <section id="ejemplo">
+        <h2 lang="es-MX"> Let see</h2>
+        <h2 lang="es-ES"> Veamos</h2>
+        <h2> ejemplo</h2>
+        <!-- section = etiquetas/areas mas globales q tiene la pagina puede contener muchos elementos internos pero todos relacionados por el tipo de contenido entre si -->
+        <p>objetivo!!</p>
+    </section>
+    <!-- Lo siguiente es un form de contacto -->
+    <form id="form" name="form" method="post" action="suscribe.php">
+        <span>Si quieres enterarte de los nuevos cursos, suscríbete.</span>
+
+     <input id="email" name="email" type="text" placeholder="Introduce tu email" onfocus="if(this.placeholder == " ') this.placeholder="Introduce tu email" '="" >
+
+     <input type="submit" name="Submit" id="button" value="Suscribete">
+ </form>
+    <aside>
+        <!-- son sugerencias, no tiene que ver con el contenido directo de la pagina, contenidos relacionados pero no directamente al tema suelen ser los q estan laterales ejemplo youtube pero no es una regla -->
+    </aside>
+    <footer>
+        <!-- footer= solo habra una etiqueta de este tipo
+        Sirve para cerrar la pagina un pie de pagina como tal
+        informacion de contacto de la pagina, links, redes sociales, marca registrada, etc -->
+        <a href="#titulo">Ir al inicio</a>
+        <!-- a href enlace de navegacion -->
+        <a href="mailto:erikarubi.2579@gmail.com">Contacto aqui</a>
+        <p>copyright 2023</p>
+    </footer>
+</body>
+</html>

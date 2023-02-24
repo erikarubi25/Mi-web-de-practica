@@ -1,0 +1,234 @@
+/*
+elemento {
+    propiedad : valor;
+    propiedad : valor;
+    propiedad : valor;
+    propiedad : valor;
+}
+*/
+header {
+    width: 100;
+    height: 50;
+    /*background: black;*/
+    background: linear-gradient(top, #6ae5e9 0%, #fff 100%);
+
+    /* PREFIJOS
+    Hay atributos CSS que para implementarse en algunos de los navegadores hay que especificar exactamente que sea posible reproducirse en ese navegador.
+    como saber la necesidad de un prefijo: Las estandar funcionan en todo pero "Can I use" es una  pagina para revisar los prefijos q están actualizados y cuales no */
+
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #6ae5e9 0%, #fff 100%);
+
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #6ae5e9 0%, #fff 100%);
+
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #6ae5e9 0%, #fff 100%);
+
+    /* IE 6 - 9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ae5e9', endColorstr='#ffffff',GradientType=0 );
+
+    /* IE 10+ */
+    background: -ms-linear-gradient(top, #6ae5e9 0%, #fff 100%);
+
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #6ae5e9 0%, #fff 100%);
+}
+
+h1#titulo{color: rgb(204, 48, 170)}
+h2 {
+    color: blue;
+}
+/*estilizar por Atributos */
+/*Esta es una manera sin colocar el valor o como el que esta activo que se coloca todo
+h2[title]{
+    color: chocolate;
+}*/
+h2[title="subtitulo"]{color: chocolate;}
+
+/*Para el caso cuando tenga un nombre largo un atributo y solo buscamos por una palabra del nombre*/
+h2[title ~= "otro"]{
+    color: red;
+}
+h2[lang |="es"]{
+    color: crimson;
+}
+/* ID son para personalizar un elemento de forma concreta y unica en toda la pagina q solo ese elemento vaya a tener
+Se puede hacer la peticion con la propiedad, hash y el id como en el ejemplo o solo #nombreid
+Para el elemento id el hash # es su referencia de enlace
+*/
+p#azul{
+    color: #0077ff;
+}
+/* Las clases sirven para definir etiquetas, css, propiedades de estilos q tendran varios elementos q vayan a compartir esas caracteristicas a traves de asignarles el nombre de una clase
+Para el elemento class el punto . es su referencia clave de enlace.
+No se pueden tener dos id con el mismo nombre pero en class si es posible solo se agrega una referencia mas como prueba o prueba grande ambos tienen la palabra prueba la diferencia es la palabra grande
+*/
+.prueba{
+    color: rebeccapurple;
+}
+.grande{
+    font-size: 20px; color: palevioletred;
+}
+/* ADYACENTES, HERMANOS, HIJOS
+El siguiente hace referencia a todos los parrafos que tengan como hermano mayor a un parrafo
+Es decir a todo parrafo que tenga un parrafo antes se le asigna esa caracteristica osea elemento1+elemento2{}   (Esta comentado para que se puedira aplicar el ejemplo del elemento hermano)
+
+Elemento ADYACENTE que hace referencia a los que vienen despues de otro es muy util cuando se quiere cambiar algo sin afectar lo primero
+
+p+p{
+    font-weight: bolder;
+}
+*/
+
+/* Los elementos HERMANOS son todos los elementos que sin importar el orden, mientras cumpla las caracteristicas aunque no este inmediatamente despues */
+p ~ p {
+    color: gray;
+}
+
+/* Los elementos HIJOS son para cambiar solo los elementos o el elemento que este dentro del que se hace referencia. El simbolo de mayor > nos dice que todo p (parrafo) que sea hijo de un div debe contener las caracteristicas asignadas */
+div > p{
+    color: rgb(107, 15, 15) ;
+}
+/* MEDIDA RELATIVAS- definen su valor con otra medida
+BP- Es establecer la medida del tamaño de letra que vaya a tener nuestra pagina en el body.
+No poner el tamaño y la unidad separados por espacio porque se anula la peticion
+Los tamaños no tienen que ser decimales pueden contener decimales.
+Y los que inicien con 0 seguido de decimal 0.4px se puede colocar sin el 0 es decir punto y numero
+1 pixel (px) es una medida relativa por que se adapta al tamaño de la pantalla desde donde se ve
+Medidas em, ex, px y rem
+*/
+body{
+    font-size: 14px;
+}
+p.em{
+    font-size: 2em;
+}
+div p{
+    font-size: 2em;
+}
+div p.rem{
+    font-size: 1rem;
+}
+p.ex{
+    font-size: 1ex;
+}
+
+/*  MEDIDAS ABSOLUTAS
+    El navegador se asegura q el tamaño que colocamos en el codigo en conjunto con la resolución de la pantalla,el navegador reconoce el tipo de pantalla y ajusta los pixeles a los elementos para que cumplan con lo la peticion estas medidas por lo regular suelen ser mas grandes que las medidas relativas
+    in: (inches o pulgadas)
+    1in = 2.54cm
+    cm: centímetros
+    mm: milímetros
+    pt: puntos
+    1pt = 0.35mm
+    pc: picas
+    1pc = 12pt = 4.23mm
+*/
+p.in{
+    font-size: .5in;
+}
+p.cm{
+    font-size: 1cm;
+}
+p.mm{
+    font-size: 8mm;
+}
+p.pt{
+    font-size: 20pt; /*usado mas para impresion en papel*/
+}
+p.pc{
+    font-size: 1pc;
+}
+/* Medidas porcentuales: fija y porcentual
+Todas las medidas porcentuales que estan dentro del body son heredadas del mismo, si dentro de un div que está dentro de un body este no tendra el 50% del body sino que hereda del div que vendria siendo un 30%
+*/
+div.fija{
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+div.porcentual{
+    height: 100px;
+    width: 50%;
+    background: green;
+    margin: 1%;
+}
+
+/*div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+}
+Este seria en caso que todos los div tengan estas propiedades
+*/
+
+/* Los siguientes son ejemplos para conocer las maneras de como colocar colores */
+.hsl_transparencia{
+    background: hsla(127, 50%,20%,0.8);
+    border: 1px solid black;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+.rgb_transparencia{
+    background: rgba(127, 51,191,1);
+    border: 1px solid black;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+.reservadas{
+    background: lime;
+    border: 1px solid black;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+.luzRGB{
+    background: rgb(200, 180, 10);
+    border: 1px solid black;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+.hex{
+    background: #643005;
+    border: 1px solid black;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+.porcentualcolor{
+    background: rgb(20%, 50%, 50%);
+    border: 1px solid black;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+.hsl{
+    background: hsl(240,50%,20%);
+    border: 1px solid black;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+/* modelo de caja
+Determinan el tamaño del espacio que deben o queremos que ocupen los elementos dentro de la pagina y con respecto a otros elementos
+*/
+
+div.caja{
+    border: 1px solid black;
+    margin: 20px, 50px, 100px,3px;
+
+    padding: 10px;
+
+    min-width: 250px;
+    max-width: 400px;
+    background: blue;
+}
+
+

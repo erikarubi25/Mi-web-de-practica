@@ -35,7 +35,10 @@ header {
     background: -o-linear-gradient(top, #6ae5e9 0%, #fff 100%);
 }
 
-h1#titulo{color: rgb(204, 48, 170)}
+h1#titulo{
+    color: rgb(204, 48, 170); 
+    font-family: 'Dancing Script', cursive;
+}
 h2 {
     color: blue;
 }
@@ -58,7 +61,12 @@ Se puede hacer la peticion con la propiedad, hash y el id como en el ejemplo o s
 Para el elemento id el hash # es su referencia de enlace
 */
 p#azul{
-    color: #0077ff;
+    color: #1333be;
+    border: 2px solid black;
+    background: rgb(218, 95, 156);
+    display: block; 
+    /*display nos muestra solo lo del texto y en caso de inline-block nos hace responsivo el o los elementos dejando espacios entre los , y con display inline muestra los elementos en una sola linea*/
+    margin: 50px 0px;
 }
 /* Las clases sirven para definir etiquetas, css, propiedades de estilos q tendran varios elementos q vayan a compartir esas caracteristicas a traves de asignarles el nombre de una clase
 Para el elemento class el punto . es su referencia clave de enlace.
@@ -110,8 +118,10 @@ div p{
 div p.rem{
     font-size: 1rem;
 }
-p.ex{
+p.ex:hover{
     font-size: 1ex;
+     color: green;
+    
 }
 
 /*  MEDIDAS ABSOLUTAS
@@ -216,6 +226,31 @@ Este seria en caso que todos los div tengan estas propiedades
     width: 100px;
 }
 
+.padre{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    background: orange;
+    position: relative;
+}
+
+.hijo1{
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    top: 10px;
+    /*position absolute, lo q hace que los elementos es como si no existiera para el resto de elementos en cuanto a posicion no a visualizacion a diferencia del relative que lo q hace es moverlo a la posicion que nosotros queremos*/
+    /*La position Fixed es para q el elemento siempre quede fijado en un  lugar*/
+    /*el float se usa para acomodar elementos en automatico alado de otros en modo de rodear como para rellenar se posicionan en left, rigth or both
+    z-index este elemento nos da una posicion sobre el eje no se coloca medida solo en num de capas en el q que queremos q se posicione sucediendo esto para ir adelante o atras
+    overflow: hidden decimos q todo lo q salga del padre no se vea se usa sobre todo en animaciones...Tambien se pueden usar en conjunto con visibility y opacity se trata de la visualizacion del elemento*/
+}
+.hijo2{
+    width: 100px;
+    height: 100px;
+    background: rgb(56, 35, 177);   
+}
 /* modelo de caja
 Determinan el tamaño del espacio que deben o queremos que ocupen los elementos dentro de la pagina y con respecto a otros elementos
 */
@@ -231,4 +266,21 @@ div.caja{
     background: blue;
 }
 
+/*los pseudoelementos (elemento:before) son visuales con ayuda del content y codigos porq no son seleccionables, no se recomienda poner textos */
+/*Pseudoclases en enlaces link y visited: se usan para que se mantenga el tema que nosotros otorgamos y no el de la config del navegador tanto para cuando no se ha visitado como cuando ya fue visitado*/
+/*Pseudoclases globales hover, active y focus: sirve para hacer animaciones por ejemplo cuando el cursor del mouse pasa por encima de un texto este podria cambiar de color en el hover y en el caso de active se da clic con el cursor y cambia de color; para el focus cambiar la forma y puede decirle al usuario donde esta ubicado*/
+/*
+p:hover{
+    color:green;
+    font-size:20px;
+    font-weight:bolder;
+}
+*/
+span:active{
+    color: green;
+}
+input:focus{
+    border-radius: 10px;
+    background: #99ebee;
+}
 

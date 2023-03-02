@@ -47,7 +47,15 @@ h2 {
 h2[title]{
     color: chocolate;
 }*/
-h2[title="subtitulo"]{color: chocolate;}
+h2[title="subtitulo"]{
+    
+    color: chocolate;
+    background: #1e8ae2;
+    margin: 10px;
+    border-color: yellow;
+    border-style: dashed;
+    border-width: 10px;
+}
 
 /*Para el caso cuando tenga un nombre largo un atributo y solo buscamos por una palabra del nombre*/
 h2[title ~= "otro"]{
@@ -60,6 +68,7 @@ h2[lang |="es"]{
 Se puede hacer la peticion con la propiedad, hash y el id como en el ejemplo o solo #nombreid
 Para el elemento id el hash # es su referencia de enlace
 */
+
 p#azul{
     color: #1333be;
     border: 2px solid black;
@@ -72,8 +81,11 @@ p#azul{
 Para el elemento class el punto . es su referencia clave de enlace.
 No se pueden tener dos id con el mismo nombre pero en class si es posible solo se agrega una referencia mas como prueba o prueba grande ambos tienen la palabra prueba la diferencia es la palabra grande
 */
-.prueba{
+.prueba:first-letter{
     color: rebeccapurple;
+    text-align: justify;
+    font-size: 30px;
+    
 }
 .grande{
     font-size: 20px; color: palevioletred;
@@ -91,12 +103,14 @@ p+p{
 
 /* Los elementos HERMANOS son todos los elementos que sin importar el orden, mientras cumpla las caracteristicas aunque no este inmediatamente despues */
 p ~ p {
+    font-family: 'Dancing Script';
     color: gray;
 }
 
 /* Los elementos HIJOS son para cambiar solo los elementos o el elemento que este dentro del que se hace referencia. El simbolo de mayor > nos dice que todo p (parrafo) que sea hijo de un div debe contener las caracteristicas asignadas */
 div > p{
-    color: rgb(107, 15, 15) ;
+    color: rgb(107, 15, 15);
+ 
 }
 /* MEDIDA RELATIVAS- definen su valor con otra medida
 BP- Es establecer la medida del tamaño de letra que vaya a tener nuestra pagina en el body.

@@ -49,12 +49,12 @@ h2[title]{
 }*/
 h2[title="subtitulo"]{
     
-    color: chocolate;
-    background: #1e8ae2;
+    color: rgb(143, 35, 170);
+    background: #08bddd;
     margin: 10px;
-    border-color: yellow;
-    border-style: dashed;
-    border-width: 10px;
+    border-color: rgb(206, 35, 197);
+    border-style:double ;
+    border-width: 5px;
 }
 
 /*Para el caso cuando tenga un nombre largo un atributo y solo buscamos por una palabra del nombre*/
@@ -110,6 +110,11 @@ p ~ p {
 /* Los elementos HIJOS son para cambiar solo los elementos o el elemento que este dentro del que se hace referencia. El simbolo de mayor > nos dice que todo p (parrafo) que sea hijo de un div debe contener las caracteristicas asignadas */
 div > p{
     color: rgb(107, 15, 15);
+    width: 80%;
+    height: 150%;
+    margin: 8%;
+    display: inline-block;
+    background: white;
  
 }
 /* MEDIDA RELATIVAS- definen su valor con otra medida
@@ -280,6 +285,7 @@ div.caja{
     background: blue;
 }
 
+
 /*los pseudoelementos (elemento:before) son visuales con ayuda del content y codigos porq no son seleccionables, no se recomienda poner textos */
 /*Pseudoclases en enlaces link y visited: se usan para que se mantenga el tema que nosotros otorgamos y no el de la config del navegador tanto para cuando no se ha visitado como cuando ya fue visitado*/
 /*Pseudoclases globales hover, active y focus: sirve para hacer animaciones por ejemplo cuando el cursor del mouse pasa por encima de un texto este podria cambiar de color en el hover y en el caso de active se da clic con el cursor y cambia de color; para el focus cambiar la forma y puede decirle al usuario donde esta ubicado*/
@@ -290,6 +296,7 @@ p:hover{
     font-weight:bolder;
 }
 */
+
 span:active{
     color: green;
 }
@@ -297,4 +304,15 @@ input:focus{
     border-radius: 10px;
     background: #99ebee;
 }
+/*Responsive design se trata que todo se coloque a la medida de la pantalla de manera que no aparezca la barra horizontal de scroll, se puede hacer usando un display: inline-block, además de usar porcentaje en lugar de pixeles */
+/*mobile first: El @media screen indica la medida del tamaño de la pantalla del teléfono célular*/
 
+@media screen and (min-width:480px){
+        
+}
+@media screen and (min-width:767px){
+    
+}
+@media screen and (min-width:950px){
+        
+}

@@ -1,0 +1,73 @@
+DISEÑO Y USABILIDAD
+    Tiempo de carga
+Tomar en cuenta:
+Tiempo de carga de la página web
+
+Herramientas:
+https://frontenddogma.com/
+https://frontenddogma.com/tools/check/
+https://pagespeed.web.dev/?hl=es
+https://tools.pingdom.com/
+https://herramientas-online.com/
+https://herramientas-online.com/comprimir-descomprimir-css.html
+
+    Reducir tamaño de archivos e imagenes
+minimizar tamaño de css y js con ayuda de la herramienta "comprimir"
+Reducir el tamaño de las imágenes, puntos por pulgadas (que sirven para pasar los pixeles de una imagen digital a pulgadas en formato fisico) se recomienda 72ppp en caso que sea necesario imprimir se recomienda 300ppp
+
+    Medir la experiencia de usuario
+Duración de la sesión (tiempo de retención de la audiencia): Tiempo que pasa el usuario desde que abre la página hasta que deja usarla (estando visible en el navegador, no significa que tenga la pestaña abierta sino que este visible)
+
+    Spam publicitario
+Colocarlasde modo que no sea invasivo para el usuario que visita una página, entre menos tiempo pasa una persona en una página el buscador lo coloca como que no es importante y la puede a enviar al final de busqueda.
+
+    Seguridad https
+http:
+https: cifrado con Seguridad, el servicio es pagado
+
+    Responsive Design
+que la pagina se capaz de adaptarse a las pantallas, google normalmente penaliza que no sea responsive
+    Mobile first
+Programar pensando en resoluciones de pantallas pequeñas en teléfonos
+css y redireccion movil (que se reconoce un telefono movil)
+
+    Como combinar colores
+https://color.adobe.com/es/create/color-wheel
+
+    Tipografías
+    En una pag no mas de 3 tipo de fuentes, se recomienda 70 letras por linea
+Familia Egipcia: titulos - negro u oscuros
+Romanas: En negrita titulos los demas para textos cortos
+Palo seco: para textos largos y son fuentes mas modernos como tecnologia y vanguardia- se recomienda con color azul
+Caligraficas: Son como recordar escribir a mano, no se recomiendan para textos largos para paginas elegantes, ejemplo, para vender perfume o ropa
+Fantasias: son par ausarse en paginas mas informales
+interlineado y espacio entre letras tener en cuenta para que quueremos la pagina.
+Alineación:  a la derecha para resaltar se suelen acompañar con letras cursivas;  a la izq es mejor para leer osea el resto del texto; texto justificado poco recomendado ; texto centrado de igual manera poco remondado a menos que sea para resaltar.
+
+    Fuentes vectoriales
+son simbolos que se tratan como si fueran letras
+https://icomoon.io/
+
+    Mockup del diseño
+Boceto-prototipo
+https://ninjamock.com/home/index
+
+
+    Responsive luminoso (Practica pendiente solo vi el video para conocimiento)
+Cambia los colores segun la luz q hay el ambiente es mas comun en los telefonos moviles
+
+    Reglas fotográficas
+Tres tercios: Tomar en cuenta la visibilidad de la imagen, de manera que lo que queremos destacar pase por los puntos posicionados en la imagen
+Doble horizonte: El elemento que mas queremos que destaque se encuentren cada elemento dentro de las lineas son imagenes con profundidad, lo que destaque no debe quedar por dentro de las marcas sino sino sobre las lineas
+
+    Planos y encuadres (angulación)
+*Los siguientes son conceptos de tomas en las imagenes en cuanto a los encuadres o angulación
+Cenital: completamente desde arriba
+Picado: Es una vista superios a lo normal sin llegar hasta a cenital
+Normal: Camara enfocando de frente
+Contrapicado: es inferior a lo normal sin llegar a nadir
+Nadir:completamente Desde abajo
+*Los siguiente es en cuanto a los Planos
+Plano General es mas la visilidad de como se ven los elementos por ejemplo una persona o un paisaje
+Plano detalle es un elemento en concreto por ejemplo balón, ojo, etc
+Planos medios son cercania ejemplo una persona vista desde el torso, y esta el pano medio largo y plano medio largo
